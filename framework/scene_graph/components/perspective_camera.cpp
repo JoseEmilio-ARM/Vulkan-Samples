@@ -60,7 +60,8 @@ float PerspectiveCamera::get_aspect_ratio()
 
 glm::mat4 PerspectiveCamera::get_projection()
 {
-	return glm::perspective(get_field_of_view(), aspect_ratio, near_plane, far_plane);
+	// Note: Using Revsered depth-buffer for increased precision, so Znear and Zfar are flipped
+	return glm::perspective(get_field_of_view(), aspect_ratio, far_plane, near_plane);
 }
 }        // namespace sg
 }        // namespace vkb
