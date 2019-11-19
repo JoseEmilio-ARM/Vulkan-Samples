@@ -102,7 +102,7 @@ Treat all warnings as errors
 
 # 3D models
 
-Most of the samples require 3D models downloaded from https://github.com/KhronosGroup/Vulkan-Samples-Assets as git submodule. The assets are placed in the right locations for all platforms except Android.
+Most of the samples require 3D models downloaded from https://github.com/KhronosGroup/Vulkan-Samples-Assets as git submodule.
 
 On Android, Gradle will run CMake which will sync assets to the device if there has been a change.
 
